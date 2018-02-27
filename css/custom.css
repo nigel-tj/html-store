@@ -1,0 +1,51 @@
+/** Your theme modifications here **/
+.table_cart {
+    width:100%;
+    max-width:700px;
+    border:1px solid #999;
+    padding:0;
+     border-collapse: collapse;
+     & thead tr, tbody tr, tfoot tr {
+         border-bottom:1px solid #888;
+         }
+     & tfoot {
+         background:rgba(0,0,0,0.1);
+         }
+     &--heading {
+         background:rgba(0,0,0,0.4);
+         text-align:left;
+         }
+     &--footer {
+         text-align:left;
+         background:rgba(0,0,0,0.1);
+
+         }
+     & td, th {
+         padding:8px;
+         border-left:1px solid #888;
+         position:relative;
+         &:first-child {
+             border:0;
+             }
+         }
+     & .add_qty, .remove_qty {
+         background:rgba(0,0,0,0.4);
+         padding:3px;
+         display:inline-block;
+         width:8px;
+         height:8px;
+         line-height:8px;
+         text-align:center;
+         vertical-align:middle;
+         position:absolute;
+         cursor:pointer;
+         color:#fff;
+         }
+     .remove_qty {
+         top:23px;
+         }
+     & .input_qty {
+         padding:5px;
+         margin-right:5px;
+         }
+}
